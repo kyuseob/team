@@ -4,7 +4,7 @@ cover = imread('C:\Users\BOOK 4\Desktop\team\original.jpg');%imread는 이미지를 �
 imwrite(stego,'C:\Users\BOOK 4\Desktop\team\output.png');%inwrite는 이미지에 텍스트를 삽입하는 함수
 
 % 숨겨진 텍스트를 추출하는 것
-stego = imread('examples/stego.png');
+stego = imread('C:\Users\BOOK 4\Desktop\team\output.png');
 [ message1 ] = steg_decode(stego, 123);
 
 % 변형된 이미지로부터 숨겨진 텍스트를 추출하는 것
