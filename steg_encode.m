@@ -12,6 +12,9 @@ addpath('./lib');
 
 % Convert message to binary
 data = dec2bin(message);
+if length(data)>capacity
+   error('Too many bits')
+end
 data = arrayfun(@(x) padarray((data(x, :) - '0'), [0, 8 - numel(data(x, :))], 0, 'pre'), 1:size(data, 1), 'UniformOutput', false);
 data = cell2mat(data);
 data = padarray(data, [0, capacity - numel(data)], 0, 'post');
