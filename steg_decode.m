@@ -2,7 +2,7 @@ function [ output ] = steg_decode( stego, key )
 %STEG_DECODE Decodes a message from a stego image.
 %   Extracts binary data from the luminance of the stego image. The data is
 %   then error corrected using a linear block code and interpreted as a
-%   binary representation of text.
+%   binary representation of text.sfwfwf
 
 n = 7; % Block code bits
 k = 3; % Block code parity bits
