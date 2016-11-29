@@ -1,7 +1,7 @@
 % 이미지 변형시키기
-cover = imread('examples/emma.jpg');%imread는 이미지를 불러오는 함수
-[ stego ] = steg_encode(cover, 123, 'Hello World!');
-imwrite(stego, 'examples/stego.png');%inwrite는 이미지에 텍스트를 삽입하는 함수
+cover = imread('C:\Users\BOOK 4\Desktop\team\original.jpg');%imread는 이미지를 불러오는 함수
+[ stego ] = steg_encode(cover, 123, 'This is sweet guy');
+imwrite(stego,'C:\Users\BOOK 4\Desktop\team\output.png');%inwrite는 이미지에 텍스트를 삽입하는 함수
 
 % 숨겨진 텍스트를 추출하는 것
 stego = imread('examples/stego.png');
